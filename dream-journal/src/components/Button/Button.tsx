@@ -4,12 +4,12 @@ import clsx from "clsx";
 
 import styles from "./Button.module.css";
 
-type variant = "solid" | "outlined";
+type Variant = "solid" | "outlined";
 type Shape = "rectangle" | "circle";
 type Size = "small" | "medium" | "large";
 
 type Props = ComponentProps<"button"> & {
-  variant?: variant;
+  variant?: Variant;
   shape?: Shape;
   size?: Size;
   sameWidthHeight?: boolean;
